@@ -7,17 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Birthday Party</title>
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <p class="hero__title">Birthday Party</p>
             <p class="hero__text">
-                A maior festa do Brasil começa em 10d 12h 20m 15s
+                A maior festa do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -41,6 +41,52 @@
         </div>
     </header>
 
+    <section class="event event--OpenBar">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Open Bar</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate obcaecati animi recusandae. Dolor, error cumque tempore hic dicta officiis itaque? Aperiam magni hic, commodi nostrum voluptas omnis tempore nesciunt?
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Bar">
+        </div>
+    </section>
+    <section class="event event--Petiscos event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Petiscos</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate obcaecati animi recusandae. Dolor, error cumque tempore hic dicta officiis itaque? Aperiam magni hic, commodi nostrum voluptas omnis tempore nesciunt?
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Bar">
+        </div>
+    </section>
+    <section class="event event--Shows">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Os melhores Shows</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate obcaecati animi recusandae. Dolor, error cumque tempore hic dicta officiis itaque? Aperiam magni hic, commodi nostrum voluptas omnis tempore nesciunt?
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="Bar">
+        </div>
+    </section>
+    <section class="event event--Cafe event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Café da manhã</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate obcaecati animi recusandae. Dolor, error cumque tempore hic dicta officiis itaque? Aperiam magni hic, commodi nostrum voluptas omnis tempore nesciunt?
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Bar">
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
